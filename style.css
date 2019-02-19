@@ -7,9 +7,10 @@
     position: relative;
 }
 
-.meter .progress {
+.progress {
     background-color: #FEBBDE;
     border-radius: 25px;
     height: 25px;
     position: relative;
+    width: 0px;
 }
