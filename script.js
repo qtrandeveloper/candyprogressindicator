@@ -1,12 +1,16 @@
 window.onload = function fillBar() {
-    var progress = document.getElementsByClassName("progress");
-    var width = 0;
+    var progress = document.getElementById("progress");
+    var percentage = document.getElementById("percentage");
+    var width = 1;
     var id = setInterval(frame, 100);
     function frame() {
-        if (progress == 100) {
-            clearInterval(id)
-        } else {
-            progress.style.width = progress++;
-        }
+      width++;
+      progress.style.width = `${width}%`;
+      percentage.innerHTML = `${width}%`;
+  
+      if (width === 100) {
+        clearInterval(id);
+      }
     }
-}
+  };
+  

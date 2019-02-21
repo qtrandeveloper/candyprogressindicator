@@ -1,16 +1,41 @@
-
-.meter {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #71e4db;
+  }
+  /* To contain the elements */
+  .container {
+    /* To make it work at different screen sizes */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  #meter {
     background-color: black;
     border-radius: 25px;
-    height: 30px;
-    width: 50%;
-    position: relative;
-}
-
-.progress {
+    /* To make it work at different screen sizes */
+    max-width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  #progress {
     background-color: #FEBBDE;
     border-radius: 25px;
-    height: 25px;
-    position: relative;
-    width: 0px;
-}
+    padding: 10px;
+  }
+  
+  #percentage {
+    font-family: Verdana, sans, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  
