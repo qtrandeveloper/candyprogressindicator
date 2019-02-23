@@ -8,6 +8,10 @@ body {
 }
 /* To contain the elements */
 .container {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
   display: flex;
   align-items: center;
   height: 100vh;
@@ -20,7 +24,6 @@ body {
 #meter {
   background-color: black;
   border-radius: 25px;
-/*   height: 25px; */
   /* To make it work at different screen sizes */
   width: 100%;
   max-width: 500px;
