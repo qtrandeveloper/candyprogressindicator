@@ -1,41 +1,44 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #71e4db;
-  }
-  /* To contain the elements */
-  .container {
-    /* To make it work at different screen sizes */
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  #meter {
-    background-color: black;
-    border-radius: 25px;
-    /* To make it work at different screen sizes */
-    max-width: 500px;
-    padding: 10px;
-    margin: 0 auto;
-  }
-  
-  #progress {
-    background-color: #FEBBDE;
-    border-radius: 25px;
-    padding: 10px;
-  }
-  
-  #percentage {
-    font-family: Verdana, sans, sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: black;
-    padding: 5px;
-    text-align: center;
-  }
-  
-  
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #71e4db;
+  overflow: hidden;
+}
+/* To contain the elements */
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  /* To make it work at different screen sizes */
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#meter {
+  background-color: black;
+  border-radius: 25px;
+/*   height: 25px; */
+  /* To make it work at different screen sizes */
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+#progress {
+  background-color: #FEBBDE;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+#percentage {
+  font-family: Verdana, sans, sans-serif;
+  font-weight: bold;
+  color: black;
+  padding: 5px;
+}
+
